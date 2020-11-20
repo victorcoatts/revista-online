@@ -1,0 +1,24 @@
+
+.footer {
+width: 60%;
+margin: 0 auto;
+background-color: $white;
+font-family: $monospace;
+padding: 2% 0;
+}
+
+@media only screen and (min-width: 800px){
+}
+
+@media only screen and (min-width: 1000px){
+}
+
+@media only screen and (min-width: 1200px){
+.footer {
+width: 30%;
+margin: 0 auto;
+background-color: $white;
+font-family: $monospace;
+}
+
+}

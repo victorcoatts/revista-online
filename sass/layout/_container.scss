@@ -1,0 +1,96 @@
+body img{
+max-width: 100%;
+}
+
+.container{
+width: 95%;
+background-color: $platinum;
+margin: 0 auto;
+}
+
+.contenido{
+width: 100%;
+height: auto;
+float: left;
+padding: 0 0 5% 1%;
+}
+
+.cuerpo img {
+width: 85vw;
+height: 30vh;
+}
+
+
+.noticia {
+padding: 3% 0;
+cursor: pointer;
+
+    &:hover{
+    color:$coral;
+    text-decoration: underline;
+    }
+}
+
+.noticia h2{
+padding:0 0 2% 0;
+}
+
+@media only screen and (min-width: 800px){
+
+
+
+}
+
+@media only screen and (min-width: 1000px){
+
+.cuerpo img {
+width: 85vw;
+height: 50vh;
+}
+
+}
+
+@media only screen and (min-width: 1200px){
+.container{
+width: 60%;
+margin: 0 auto;
+padding: 1% 0 0 0;
+height: auto;
+background-color: $platinum;
+color:$black;
+}
+
+.contenido{
+width: 68%;
+height: auto;
+float: left;
+padding: 0 1% 2% 1%;
+}
+
+.noticia {
+width: 90%;
+margin: 5px;
+cursor: pointer;
+
+    &:hover{
+    color:$coral;
+    }
+
+}
+    
+.cuerpo img {
+width: 100%;
+height: auto;
+}
+
+.cuerpo p {
+padding: 5px 10px;
+}
+
+
+
+
+
+}
+
+

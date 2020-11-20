@@ -1,0 +1,340 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: monospace;
+  font-weight: 700;
+  font-size: 26px;
+}
+
+h2 {
+  font-family: monospace;
+  font-weight: 700;
+  font-size: 19.5px;
+}
+
+p {
+  font-family: monospace;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.row {
+  display: block;
+}
+
+@media only screen and (min-width: 1200px) {
+  .row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px 5px;
+  }
+}
+.header {
+  width: 95%;
+  background-color: #FFF;
+  margin: 0 auto;
+  font-family: monospace;
+}
+
+.menu {
+  width: 100%;
+  padding: 10px 10px 20px 10px;
+  border-bottom: 1px solid gray;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: inline-block;
+  width: 12%;
+}
+
+.nav {
+  display: inline-block;
+  width: 100%;
+  text-align: right;
+  margin-top: -5%;
+}
+
+.nav ul li {
+  list-style: none;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000000;
+}
+.nav ul li a:hover {
+  color: #E94F37;
+  text-decoration: underline;
+}
+
+.input-menu {
+  border-radius: 30px;
+}
+
+@media only screen and (min-width: 800px) {
+  .header {
+    width: 85%;
+    padding: 0 0 0 0;
+  }
+
+  .nav {
+    width: 87%;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .header {
+    width: 70%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .header {
+    width: 60%;
+    padding: 2.5% 0 0 0;
+  }
+
+  .nav {
+    width: 87%;
+    text-align: right;
+    margin-top: -5%;
+  }
+
+  .nav ul li {
+    list-style: initial;
+  }
+}
+body img {
+  max-width: 100%;
+}
+
+.container {
+  width: 95%;
+  background-color: #F2F4F5;
+  margin: 0 auto;
+}
+
+.contenido {
+  width: 100%;
+  height: auto;
+  float: left;
+  padding: 0 0 5% 1%;
+}
+
+.cuerpo img {
+  width: 85vw;
+  height: 30vh;
+}
+
+.noticia {
+  padding: 3% 0;
+  cursor: pointer;
+}
+.noticia:hover {
+  color: #E94F37;
+  text-decoration: underline;
+}
+
+.noticia h2 {
+  padding: 0 0 2% 0;
+}
+
+@media only screen and (min-width: 1000px) {
+  .cuerpo img {
+    width: 85vw;
+    height: 50vh;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .container {
+    width: 60%;
+    margin: 0 auto;
+    padding: 1% 0 0 0;
+    height: auto;
+    background-color: #F2F4F5;
+    color: #000000;
+  }
+
+  .contenido {
+    width: 68%;
+    height: auto;
+    float: left;
+    padding: 0 1% 2% 1%;
+  }
+
+  .noticia {
+    width: 90%;
+    margin: 5px;
+    cursor: pointer;
+  }
+  .noticia:hover {
+    color: #E94F37;
+  }
+
+  .cuerpo img {
+    width: 100%;
+    height: auto;
+  }
+
+  .cuerpo p {
+    padding: 5px 10px;
+  }
+}
+.sidebar {
+  display: none;
+}
+
+@media only screen and (min-width: 1200px) {
+  .sidebar {
+    display: block;
+    width: 30%;
+    height: auto;
+    color: #000000;
+    float: right;
+    padding-left: 1%;
+    font-family: monospace;
+  }
+
+  .cabecera-listado {
+    width: 220px;
+    border-bottom: 1px solid gray;
+    padding-bottom: 7%;
+  }
+
+  .cabecera-listado h1 {
+    padding-bottom: 5%;
+  }
+
+  .tags {
+    border-bottom: 1px solid gray;
+    padding-bottom: 7%;
+  }
+
+  .tags h1 {
+    padding: 5% 0;
+  }
+
+  .tags ul {
+    padding: 0;
+    list-style: none;
+  }
+
+  .tags ul li {
+    padding: 2px 4px;
+    background-color: steelblue;
+    margin-right: 1px;
+    color: white;
+    cursor: pointer;
+  }
+  .tags ul li:hover {
+    color: #000000;
+  }
+
+  .noticias-destacadas {
+    margin-bottom: 50px;
+  }
+
+  .noticias-destacadas h1 {
+    padding: 5% 0;
+  }
+
+  .noticias-destacadas img {
+    width: 220px;
+    height: 200px;
+  }
+
+  .item {
+    cursor: pointer;
+  }
+  .item:hover {
+    color: #E94F37;
+    text-decoration: underline;
+  }
+
+  .item h4 {
+    padding: 4% 0 2% 0;
+  }
+}
+.newsletter {
+  width: 100%;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.newsletter h2 {
+  font-size: 24px;
+  padding: 0 0 1% 0;
+}
+
+.group {
+  padding: 2% 0;
+}
+
+.group input,
+.group button {
+  display: inline-block;
+  border-width: 0;
+  font-size: 13px;
+  padding: 5px 10px;
+}
+
+.group button {
+  background-color: coral;
+  color: white;
+}
+
+@media only screen and (min-width: 1200px) {
+  .newsletter {
+    width: 100%;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .newsletter h2 {
+    font-size: 24px;
+    padding: 0 0 1% 0;
+  }
+
+  .group {
+    padding: 2% 0;
+  }
+
+  .group input,
+.group button {
+    display: inline-block;
+    border-width: 0;
+    font-size: 13px;
+    padding: 5px 10px;
+  }
+
+  .group button {
+    background-color: coral;
+    color: white;
+  }
+}
+.footer {
+  width: 60%;
+  margin: 0 auto;
+  background-color: #FFF;
+  font-family: monospace;
+  padding: 2% 0;
+}
+
+@media only screen and (min-width: 1200px) {
+  .footer {
+    width: 30%;
+    margin: 0 auto;
+    background-color: #FFF;
+    font-family: monospace;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
